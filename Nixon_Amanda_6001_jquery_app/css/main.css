@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body, div, img, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt,
+blockquote, fieldset, legend, label, input, textarea {
+    margin: 0; padding: 0; border: 0;
+}
+sh1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 1em 0;
+}
+h1{font-size: 200%;}
+h2{font-size: 170%;}
+h3{font-size: 160%;}
+h4{font-size: 140%;}
+h5{font-size: 120%;}
+
+html, body { height: 100%; }
+
+.homeContent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#mainBG {
+   background-image: url(images/background.jpg) no-repeat scroll;
+	background-position:center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}*/
+body{
+	background-color: #C90;
+	/*background-image: url(images/background.jpg) no-repeat scroll;*/
+
+}
+#content {
+    background: transparent;
+}
+#home,#lessons,#chords, #chord1,#chord2,#scales,#tuner{
+    background-image: url('../images/background.jpg');
+	background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+
+
+
+
+
+.centered {
+	width:100%;
+
+
+}
+
+.audio{
+	width:90%;
+	margin-left: 15px;
+}
+
+#footer{
+	margin-top:0;
+}
+
+p{
+	font-color:#FFF;
+	
+}
+
+#tuner{
+	background-color:#fff;
+}

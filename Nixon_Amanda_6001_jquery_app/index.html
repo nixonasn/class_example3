@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mandolin Guide</title>
+<!--If this isn't set, many mobile browsers will use a virtual width of around 900px, we want it to render at the actual device width-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="themes/app.min.css" />
+<link rel="stylesheet" href="themes/app.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script src="javascript/guitar.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home" data-theme="a">
+	<div data-role="header" data-theme="a">
+    	<h1>Mandolin Guide</h1>
+    </div><!--end of header-->
+    
+	<img src="images/homebg.png" class="centered">
+    
+<div id="content" data-role="content">
+    <!--inset adds margin space, data-filter adds search-->
+    
+    
+    <nav data-role="navbar">
+    <ul>
+    <li><a href="#chords" data-role="button" style="margin-right:5px;" img src="images/button1.png">Chords</a></li>
+
+    <li><a href="#lessons" data-role="button" style="margin-left:5px;" img src="images/purple.png">Lessons</a></li>
+    </ul>
+    
+    <br>
+    
+    <ul>
+    <li><a href="#tuner" data-role="button" style="margin-right:5px;">Tuner</a></li>
+
+    <li><a href="#scales" data-role="button" style="margin-left:5px;">Scales</a></li>
+    </ul>
+    </nav>
+    
+    
+    </div><!--end of conent tag-->
+
+
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+         <li><a href="#home" data-icon="home" data-rel="dialog">Home</a></li>
+                 
+     </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Home Page-->
+
+
+
+<!-------------------------Chords------------------------------->
+<div data-role="page" id="chords">
+	<div data-role="header" data-theme="a">
+    <h3>Chords</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+
+    </div><!--end of header-->
+    
+ 	<ul data-role="listview" data-inset="true" id="chordslist">
+        	<li><a href="#chord1"><h3>G Major</h3><img src="images/gicon.png"></a></li>
+            <li><a href="#chord2"><h3>C Major</h3><img src="images/cicon.png"></a></li>
+            <li><a href="#chord3"><h3>D Minor</h3><img src="images/dicon.png"></a></li>
+            <li><a href="#chord4"><h3>D Major 7</h3><img src="images/d7icon.png"></a></li>
+
+        </ul>
+
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+         <li><a href="#home" data-icon="back" data-rel="dialog">Back</a></li>               
+     </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Chords Page-->
+</div><!--end of conent tag-->
+
+<!------------------------Chord1------------------------------->
+<div data-role="page" id="chord1">
+	<div data-role="header" data-theme="a">
+    <h3>Chords</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+
+    </div><!--end of header-->
+
+<img src="images/Chord1.png" class="centered">
+
+<audio src="gchord.mp3" controls preload class="audio"></audio>
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+    <li><a data-role="button" data-theme="a" href="#chords" data-icon="back">Back</a></li>
+    <li><a data-role="button" data-theme="a" href="#chord2" data-icon="next">C Chord</a></li>
+          
+    </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Chords Page-->
+
+<!-------------------------Chord2----------------------------->
+
+<div data-role="page" id="chord2">
+	<div data-role="header" data-theme="a">
+    <h3>Chords</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+
+    </div><!--end of header-->
+
+<img src="images/Chord2.png" class="centered">
+
+<audio src="cchord.mp3" controls preload class="audio"></audio>
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+    <li><a data-role="button" data-theme="a" href="#chords" data-icon="back">Back</a></li>
+    <li><a data-role="button" data-theme="a" href="#chord3" data-icon="next">Dm Chord</a></li>
+          
+    </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Chords Page-->
+
+<!-------------------------Chord3----------------------------->
+
+<div data-role="page" id="chord3">
+	<div data-role="header" data-theme="a">
+    <h3>Chords</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+
+    </div><!--end of header-->
+
+<img src="images/Chord5.png" class="centered">
+
+<audio src="dmchord.mp3" controls preload class="audio"></audio>
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+    <li><a data-role="button" data-theme="a" href="#chords" data-icon="back">Back</a></li>
+    <li><a data-role="button" data-theme="a" href="#chord4" data-icon="next">D7 Chord</a></li>
+          
+    </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Chords Page-->
+
+<!-------------------------Chord4----------------------------->
+
+<div data-role="page" id="chord4">
+	<div data-role="header" data-theme="a">
+    <h3>Chords</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+
+    </div><!--end of header-->
+
+<img src="images/Chord8.png" class="centered">
+
+<audio src="dchord.mp3" controls preload class="audio"></audio>
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+    <li><a data-role="button" data-theme="a" href="#chords" data-icon="back">Back</a></li>
+    <li><a data-role="button" data-theme="a" href="#chord1" data-icon="next">G Chord</a></li>
+          
+    </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Chords Page-->
+
+
+
+
+
+
+
+<div data-role="page" id="lessons">
+	<div data-role="header" data-theme="a">
+    <h3>Lessons</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+    </div><!--end of header-->
+    
+    
+    	<!---Start of Content --- Collapsable Set--->
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>General Advice</h3>
+            <p>Mandolin family instruments are made in two basic types - the bowl back or Neapolitan mandolin ('taterbug') and the flatback style	 			originated by Orville Gibson.</p> 
+			<p>Flatback mandolins and mandolas are by far the most popular style now and are made by many manufacturers around the world. The 								      	 	plainest have a flat soundboard and fretboard but the more expensive have a radiused (slightly curved) fretboard and a carved (again 	 			slightly curved) soundboard. The larger instruments (mandocello, mandobass) are no longer manufactured but some luthiers will hand  		 			make them to order.</p>
+
+        	</div>
+        	</div><!--End of Intro-->
+            
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>Basics</h3>
+            <p>Learn how to <a href="#tuner">tune</a> the instrument and keep it in tune. Tune it (before) every time you play it.</p>
+        	</div>
+        	</div><!--End of Intro-->
+            
+         <div data-role="collapsible-set">
+            <div data-role="collapsible" data-theme="a">
+            <h3>Playing</h3>
+            <li>Learn a tune in your mind. Be able to hum it or whistle it. Play a favourite track until you really know the tune.</li><br>
+            <li>Start with tunes you know, the simpler the better.</li><br>
+            <li>Try starting something like "She'll be coming round the mountain" on the 2nd string open (which is actually A)</li><br>
+            <li>Play: open, 2nd fret, 5th fret (4 times), 2nd fret, open to get you started. Try and figure out the rest.</li><br>
+            <li>There! That's your first tune. </li><br>
+        	</div>
+          	</div><!--End of Intro-->
+            
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>All About Strings</h3>
+            <p>There are two different materials for the strings for the types of instrument on these pages - Nickel and Phosphor Bronze, and two 			types of string. </p>
+            <li>Plain strings are Nickel, wound strings can be either Nickel or Phosphor Bronze. These can be used on Mandolin, Mandola, Mandolin			 			 Banjo, Banjolin, Tenor Banjo and Bouzouki.</li><br>
+            <li>Immediately distiguishable by the goldy bronze colour. Only available as wound strings, they give a 'brighter' sound and are 	 			 			often used on the wooden instruments i.e. mandolin, mandola and bouzouki.</li>
+
+        	</div>
+        	</div><!--End of Intro-->
+            
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>Scales and Modes</h3>
+            <h3>An Octave Starting on C</h3>
+            <p>Modern instruments have 12 notes (semitones) in the octave, not just 8. i.e. 12 keys on a piano (the black notes are the extras)  			  			and 12 frets on a mandolin (banjolin, banjo, etc) between any 2 notes of the same name. </p>
+            
+            <P>Starting a major scale on a note other than C (or a minor scale on a note other than A) needs notes that are not there in the 	 				 			natural key (i.e. C and A minor). The starting note is called the Tonic (key note) and gives its name to the key.</p> 
+        	</div>
+        	</div><!--End of Intro-->
+            
+    	<!---End of Content --- Collapsable Set--->
+
+
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+         <li><a href="#home" data-icon="back" data-rel="dialog">Back</a></li>
+                 
+     </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Lessons Page-->
+
+
+
+<div data-role="page" id="tuner">
+	<div data-role="header" data-theme="a">
+    <h3>Tuner</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+    </div><!--end of header-->
+
+<p>Important Tuning Tip: Always play a string before you begin turning a tuning peg, That way, you’ll know if you’re turning the correct peg in the right direction. </p>
+
+<img src="images/guitartuning.png" class="centered">
+
+<div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>G</h3>
+            <audio src="gstring.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+                        
+<div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>D</h3>
+            <audio src="dstring.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+
+<div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>A</h3>
+            <audio src="astring.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+
+<div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>E</h3>
+            <audio src="estring.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+         <li><a href="#home" data-icon="back" data-rel="dialog">Back</a></li>
+                 
+     </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Tuner Page-->
+
+
+
+<div data-role="page" id="scales">
+	<div data-role="header" data-theme="a">
+    <h3>Scales</h3>
+    <a data-role="button" data-theme="a" href="#home" data-icon="home">Home</a>
+    </div><!--end of header-->
+
+
+		<p>The pentatonic minor scale is a five note scale (penta meaning five like in pentagon, and tonic meaning tone). So a pentatonic scale  			 	   	is a "five tone scale". There are five positions to learn in a pentatonic scale.</p>
+	
+
+	    	<!---Start of Content --- Collapsable Set--->
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>Major Pentatonic</h3>
+            <img src="images/scales.png" class="centered">
+            <audio src="pentatonic_major.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+            
+         <div data-role="collapsible-set">
+        	<div data-role="collapsible" data-theme="a">
+            <h3>Minor Pentatonic</h3>
+            <img src="images/scales2.png" class="centered">
+             <audio src="pentatonic_minor.mp3" controls preload class="audio"></audio>
+        	</div>
+        	</div><!--End of Intro-->
+            
+         
+            
+            
+<div data-role="footer" data-theme-position="fixed" id="footer">
+<nav data-role="navbar">
+     <ul>
+
+         <li><a href="#home" data-icon="back" data-rel="dialog">Back</a></li>
+                 
+     </ul>
+      
+</nav>
+</div><!--end of footer-->
+</div><!--end of Scales Page-->
+
+</body>
+</html>
