@@ -3,10 +3,10 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.hello-world"
         version   = "2.2.0">
-    <name>My App For Class</name>
+    <name>App For Class (Mandolin Guide)</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        App For Class - PhoneGap Build.
     </description>
 
     <author href="#" email="amanda.s.nixon@gmail.com">
